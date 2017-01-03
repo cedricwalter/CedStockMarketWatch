@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+    <name>CedStockMarketWatch | Galaxiis.com</name>
+
+    <author>Galaxiis</author>
+    <creationDate>2016-12-31</creationDate>
+
+    <copyright>Copyright (C) 2013-2016 galaxiis.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL 3.0</license>
+
+    <authorEmail>galaxiiscom@gmail.com</authorEmail>
+    <authorUrl>www.galaxiis.com</authorUrl>
+
+    <version>1.4.5</version>
+
+    <description>CedStockMarketWatch is THE widget to display stock market data in joomla!</description>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_cedstockmarketwatch.ini</language>
+    </languages>
+    <media>
+        <folder>mod_cedstockmarketwatch</folder>
+    </media>
+    <files>
+        <filename module="mod_cedstockmarketwatch">mod_cedstockmarketwatch.php</filename>
+        <folder>tmpl/</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <config addfieldpath="libraries/galaxiis/fields">
+        <fields name="params">
+            <fieldset name="basic">
+                <field shortId="cedstockmarketwatch"
+                       name="toolbar"
+                       type="galaxiisbar"/>
+                <field
+                        name="message"
+                        type="galaxiismessage"
+                        message="note"
+                        label="Please help us: vote, suggest and give us your opinion in the Joomla extensions directory. With this you will help us to increase our interest to modify and update the extension. Thank you very much."/>
+                <field
+                        name="version_msg"
+                        type="galaxiismessage"
+                        message="version"
+                        version="1.4.5"
+                        extension_name="CedStockMarketWatch"/>
+
+                <field name="chart_display" type="radio" default="true" label="CHART_DISPLAY" description="CHART_DISPLAY_DESC" class="btn-group">
+                    <option value="true">JYES</option>
+                    <option value="false">JNO</option>
+                </field>
+                <field name="stock_id" type="text" default="GOOG" label="DEFAULT_STOCK_ID" description="DEFAULT_STOCK_ID_DESC"></field>
+
+                <field name="spacer_time" type="spacer"
+                       label="&lt;div style=&quot;font-weight:bold;font-size:11px;color:#000;padding:8px;margin:0;background:#ffd;&quot;&gt;'Get more Time Span: 3,6 Months / 1/2/5 and more years' &lt;a target=&quot;_blank&quot; href=&quot;http://www.galaxiis.com/cedstockmarketwatch-subscribe/&quot;&gt;get the Premium Version of CedStockMarketWatch now.&lt;/a&gt;&lt;/div&gt;"
+                       default="" description=""/>
+
+                <field name="time_span" type="radio" default="1d" label="TIME_SPAN" description="TIME_SPAN_DESC" class="btn-group">
+                    <option value="1d">1 Day</option>
+                    <option value="5d">5 Days</option>
+
+                </field>
+
+                <field name="spacer_charttype" type="spacer"
+                       label="&lt;div style=&quot;font-weight:bold;font-size:11px;color:#000;padding:8px;margin:0;background:#ffd;&quot;&gt;Get more 'Chart type': Bar and Candle &lt;a target=&quot;_blank&quot; href=&quot;http://www.galaxiis.com/cedstockmarketwatch-subscribe/&quot;&gt;get the Premium Version of CedStockMarketWatch now.&lt;/a&gt;&lt;/div&gt;"
+                       default="" description=""/>
+                <field name="chart_type" type="radio" default="l" label="CHART_TYPE" description="CHART_TYPE_DESC" class="btn-group">
+                    <option value="l">Line</option>
+                </field>
+                <field name="chart_scale" type="radio" default="on" label="CHART_SCALE" description="CHART_SCALE_DESC" class="btn-group">
+                    <option value="on">Logarithmic</option>
+                    <option value="off">Arithmetic</option>
+                </field>
+
+                <field name="spacer_chartsize" type="spacer"
+                       label="&lt;div style=&quot;font-weight:bold;font-size:11px;color:#000;padding:8px;margin:0;background:#ffd;&quot;&gt;Get more 'Chart Size': Middle and Large &lt;a target=&quot;_blank&quot; href=&quot;http://www.galaxiis.com/cedstockmarketwatch-subscribe/&quot;&gt;get the Premium Version of CedStockMarketWatch now.&lt;/a&gt;&lt;/div&gt;"
+                       default="" description=""/>
+                <field name="chart_image_size" type="radio" default="m" label="CHART_IMAGE_SIZE" description="CHART_IMAGE_SIZE_DESC" class="btn-group">
+                    <option value="s">Small</option>
+                </field>
+                <field name="height" type="integer" length="4" default="180" label="Height" required="true"
+                       description="Height of chart picture. Only used if layout = 'single'"
+                       first="0"
+                       last="1000"
+                       step="1"
+                        ></field>
+
+                <field name="width" type="integer" length="4" default="300" label="Width" required="true"
+                       description="Width of chart picture. Only used if layout = 'single'"
+                       first="0"
+                       last="1000"
+                       step="1"
+                        ></field>
+
+                <field name="spacer_fields" type="spacer"
+                       label="&lt;div style=&quot;font-weight:bold;font-size:11px;color:#000;padding:8px;margin:0;background:#ffd;&quot;&gt;Get 78 more 'Fields' &lt;a target=&quot;_blank&quot; href=&quot;http://www.galaxiis.com/cedstockmarketwatch-subscribe/&quot;&gt;get the Premium Version of CedStockMarketWatch now.&lt;/a&gt;&lt;/div&gt;"
+                       default="" description=""/>
+                <!-- 83 indicator -->
+                <field name="fields" type="list" default="" label="Fields" description="Fields to display below the chart" multiple="multiple">
+                    <option value="Symbol">symbol</option>
+                    <option value="Name">Name</option>
+                    <option value="Ask">Ask</option>
+                    <option value="Bid">Bid</option>
+                </field>
+                <field name="moving_average_indicator" type="text" default="" label="MOVING_AVERAGE_INDICATOR" description="MOVING_AVERAGE_INDICATOR_DESC"/>
+                <field name="exponential_moving_average_indicator" type="text" default="" label="EXPONENTIAL_MOVING_AVERAGE_INDICATOR"
+                       description="EXPONENTIAL_MOVING_AVERAGE_INDICATOR_DESC"/>
+
+
+                <field name="spacer_fields" type="spacer"
+                       label="&lt;div style=&quot;font-weight:bold;font-size:11px;color:#000;padding:8px;margin:0;background:#ffd;&quot;&gt;Get 10 more 'Technical Indicator' to choose from &lt;a target=&quot;_blank&quot; href=&quot;http://www.galaxiis.com/cedstockmarketwatch-subscribe/&quot;&gt;get the Premium Version of CedStockMarketWatch now.&lt;/a&gt;&lt;/div&gt;"
+                       default="" description=""/>
+                <field name="technical_indicator"
+                       multiple="multiple"
+                       type="list" default="" label="TECHNICAL_INDICATOR" description="TECHNICAL_INDICATOR_DESC">
+                    <option value="">None</option>
+                    <option value="fs">Stochastic</option>
+                </field>
+                <field name="comparing_ids" type="text" default="" label="COMPARING_IDS" description="COMPARING_IDS"></field>
+
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

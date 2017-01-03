@@ -1,0 +1,10 @@
+{
+    "name": "cedsimplepie",
+    "description": "Galaxiis Simplepie Library",
+    "license": "GNU/GPL",
+
+    "require": {
+        "php": ">=5.3.0",
+        "simplepie/simplepie": "1.4.2"
+    }
+}

@@ -1,0 +1,135 @@
+table th {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+table td, table th {
+    font-size: 12px;
+    padding: 2px 5px;
+    text-align: left;
+}
+
+.cedstockmneg {
+    color: red;
+}
+
+.cedstockmpos {
+    color: green;
+}
+
+.cedstockmno {
+    color: black;
+}
+
+.bloc {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 3px;
+}
+.c1A5488 {
+    background-color: #1A5488;
+}
+.cf5110c {
+    background-color: #f5110c;
+}
+.cc30beb {
+    background-color: #c30beb;
+}
+.c48ae37 {
+    background-color: #48ae37;
+}
+
+.cFF9900 {
+    background-color: #FF9900;
+}
+.cFFCC00 {
+    background-color: #FFCC00;
+}
+.cFF3399 {
+    background-color: #FF3399;
+}
+
+.t1A5488 {
+    color: #1A5488;
+}
+
+.tf5110c {
+    color: #f5110c;
+}
+
+.tc30beb {
+    color: #c30beb;
+}
+
+.t48ae37 {
+    color: #48ae37;
+}
+.tFF9900 {
+    color: #FF9900;
+}
+.tFFCC00 {
+    color: #FFCC00;
+}
+.tFF3399 {
+    color: #FF3399;
+}
+
+@media only screen and (max-width: 767px) {
+    table.cedsmresponsive {
+        margin-bottom: 0;
+    }
+
+    .pinned {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        width: 35%;
+        overflow: hidden;
+        overflow-x: scroll;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+    }
+
+    .pinned table {
+        border-right: none;
+        border-left: none;
+        width: 100%;
+    }
+
+    .pinned table th, .pinned table td {
+        white-space: nowrap;
+    }
+
+    .pinned td:last-child {
+        border-bottom: 0;
+    }
+
+    div.table-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-right: 1px solid #ccc;
+    }
+
+    div.table-wrapper div.scrollable table {
+        margin-left: 35%;
+    }
+
+    div.table-wrapper div.scrollable {
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    table.cedsmresponsive td, table.cedsmresponsive th {
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    table.cedsmresponsive th:first-child, table.cedsmresponsive td:first-child, table.cedsmresponsive td:first-child, table.cedsmresponsive.pinned td {
+        display: none;
+    }
+}

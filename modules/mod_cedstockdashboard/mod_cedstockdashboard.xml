@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+    <name>CedstockDashboard | Galaxiis.com</name>
+
+    <author>Galaxiis</author>
+    <creationDate>2016-12-31</creationDate>
+
+    <copyright>Copyright (C) 2013-2016 galaxiis.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL 3.0</license>
+
+    <authorEmail>galaxiiscom@gmail.com</authorEmail>
+    <authorUrl>www.galaxiis.com</authorUrl>
+
+    <version>1.4.5</version>
+
+    <description>MOD_CEDSTOCKDASHBOARD_XML_DESCRIPTION</description>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_cedstockdashboard.ini</language>
+        <language tag="en-GB">en-GB.mod_cedstockdashboard.sys.ini</language>
+    </languages>
+
+    <files>
+        <filename module="mod_cedstockdashboard">mod_cedstockdashboard.php</filename>
+        <folder>tmpl/</folder>
+        <filename>index.html</filename>
+    </files>
+
+    <media>
+        <folder>mod_cedstockdashboard</folder>
+    </media>
+
+    <config addfieldpath="libraries/galaxiis/fields">
+        <fields name="params">
+            <fieldset name="basic">
+                <field shortId="cedstockmarketwatch"
+                       name="toolbar"
+                       type="galaxiisbar"/>
+                <field
+                        name="message"
+                        type="galaxiismessage"
+                        message="note"
+                        label="Please help us: vote, suggest and give us your opinion in the Joomla extensions directory. With this you will help us to increase our interest to modify and update the extension. Thank you very much."/>
+                <field
+                        name="version_msg"
+                        type="galaxiismessage"
+                        message="version"
+                        version="1.4.5"
+                        extension_name="CedStockMarketWatch"/>
+                <field name="stocks"
+                       type="textarea" rows="3"
+                       label="MOD_CEDSTOCKDASHBOARD_STOCKS"
+                       default="NVDA,EBAY,INTC,AAPL,MSFT,GOOG,FB,TWTR"
+                       description="MOD_CEDSTOCKDASHBOARD_STOCKS_DESC"/>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

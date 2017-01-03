@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" yahoo:count="15" yahoo:created="2014-07-11T20:51:00Z" yahoo:lang="en-US">
+    <diagnostics>
+        <publiclyCallable>true</publiclyCallable>
+        <url execution-start-time="1" execution-stop-time="189" execution-time="188"><![CDATA[http://finance.yahoo.com/q?s=AAPL]]></url>
+        <url execution-start-time="1" execution-stop-time="189" execution-time="188"><![CDATA[http://finance.yahoo.com/q?s=AAPL]]></url>
+        <user-time>192</user-time>
+        <service-time>362</service-time>
+        <build-version>0.2.2611</build-version>
+    </diagnostics>
+    <results>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/video/tsmfe/SIG=13rha3jm8/*http://www.thestreet.com/_yahoo/story/12772025/1/apples-iwatch-rumored-to-be-delayed-as-stocks-head-into-the-weekend.html?cm_ven=YAHOOV&amp;cm_cat=FREE&amp;cm_ite=NA"
+            >[video] Apple's iWatch Rumored To Be Delayed As Stocks Head Into The Weekend</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/tsmfe/SIG=13hsgekod/*http://www.thestreet.com/story/12771903/1/how-will-apple-aapl-stock-be-affected-by-a-possible-iwatch-delay.html?puc=yahoo&amp;cm_ven=YAHOO"
+            >How Will Apple (AAPL) Stock Be Affected By A Possible iWatch Delay?</a>
+        <a href="http://us.rd.yahoo.com/finance/external/video/cbsm/SIG=11iiumket/*http://www.marketwatch.com/News/Story/Story.aspx?guid=9F089177-A206-4C94-B910-D6240570D070&amp;siteid=yhoof2">[video]
+            Lebron James Returns to Cleveland Cavaliers, and More</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/xtechcrunch/SIG=13bkh2amd/*http://techcrunch.com/2014/07/11/apple-opens-up-with-a-new-blog-about-swift-its-new-programming-language/?ncid=txtlnkusaolp00000591"
+            >Apple Opens Up With A New Blog About Swift, Its New Programming Language</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/video/bloomberg/SIG=13efh0lkc/*http://www.bloomberg.com/video/why-the-weather-channel-has-attracted-apple-s-eye-Ems54bGjTSKmLX729VYYOQ.html?cmpid=yhoo"
+            >[video] Why the Weather Channel Has Attracted Apple's Eye</a>
+        <a href="http://us.rd.yahoo.com/finance/external/mfool/SIG=12tqoakma/*http://www.fool.com/investing/general/2014/07/11/3-reasons-not-to-worry-about-potbelly.aspx?source=eogyholnk0000001">3
+            Reasons Not to Worry About Potbelly</a>
+        <a href="http://us.rd.yahoo.com/finance/external/ft/SIG=129aq116r/*http://www.ft.com/cms/s/a588d99a-08e7-11e4-9d3c-00144feab7de,s01=1.html">China state TV claims iPhone tracking could expose
+            'state secrets'</a>
+        <a href="http://us.rd.yahoo.com/finance/external/pssa/SIG=12l2lha6u/*http://seekingalpha.com/article/2310925-momentum-will-push-apple-to-105-by-year-end?source=yahoo">Momentum Will Push Apple
+            To $105 By Year-End</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/forbes/SIG=14g5ff4dq/*http://www.forbes.com/sites/davealtavilla/2014/07/11/the-snowden-effect-continues-as-china-claims-apples-iphone-a-threat-to-national-security/?partner=yahootix"
+            >The 'Snowden Effect' Continues As China Claims Apple's iPhone A Threat To National Security</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/forbes/SIG=13o225cv7/*http://www.forbes.com/sites/anthonykosner/2014/07/11/iwatch-will-prove-apple-as-a-luxury-brand-and-a-brand-powerhouse/?partner=yahootix"
+            >iWatch Will Prove Apple As A Luxury Brand And A Brand Powerhouse</a>
+        <a href="http://us.rd.yahoo.com/finance/external/xwscheats/SIG=139hop51i/*http://wallstcheatsheet.com/technology/apples-iwatch-production-may-be-delayed-but-hype-continues.html/?ref=YF"
+            >Apple’s iWatch Production May Be Delayed, But Hype Continues</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/minyanville/SIG=145k0lkfe/*http://www.minyanville.com/special-features/from-the-buzz-banter/articles/Underwhelming-Wearables-and-Smartphone/7/11/2014/id/55527?camp=syndication&amp;medium=portals&amp;from=yahoo"
+            >Underwhelming Wearables and Smartphone Slowdown Raise Questions About Growth in Technology</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/minyanville/SIG=13h6mp9le/*http://www.minyanville.com/sectors/technology/articles/Apple-Google-Debut-Nifty-Features-for/7/11/2014/id/55526?camp=syndication&amp;medium=portals&amp;from=yahoo"
+            >Apple, Google Debut Nifty Features for Their TV Devices</a>
+        <a href="http://us.rd.yahoo.com/finance/external/wsj/SIG=12n49i86j/*http://online.wsj.com/articles/china-labels-apple-iphone-a-security-threat-1405062978?mod=yahoo_hs">China Calls iPhone a
+            Security Risk</a>
+        <a
+            href="http://us.rd.yahoo.com/finance/external/xtechcrunch/SIG=13v4o66im/*http://techcrunch.com/2014/07/11/chinese-state-media-renews-anti-apple-rhetoric-calls-the-iphone-a-national-security-concern/?ncid=txtlnkusaolp00000591"
+            >Chinese State Media Renews Anti-Apple Rhetoric, Calls The iPhone A “National Security Concern”</a>
+    </results>
+</query>
+<!-- total: 192 -->
+<!-- engine6.yql.bf1.yahoo.com -->

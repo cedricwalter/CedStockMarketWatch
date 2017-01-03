@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+    <name>CedStockMarketNews | Galaxiis.com</name>
+
+    <author>Galaxiis</author>
+    <creationDate>2016-12-31</creationDate>
+
+    <copyright>Copyright (C) 2013-2016 galaxiis.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL 3.0</license>
+
+    <authorEmail>galaxiiscom@gmail.com</authorEmail>
+    <authorUrl>www.galaxiis.com</authorUrl>
+
+    <version>1.4.5</version>
+
+    <description>MOD_CEDSTOCKMARKETNEWS_XML_DESCRIPTION</description>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_cedstockmarketnews.ini</language>
+    </languages>
+    <media>
+        <folder>mod_cedstockmarketnews</folder>
+    </media>
+    <files>
+        <filename module="mod_cedstockmarketnews">mod_cedstockmarketnews.php</filename>
+        <folder>tmpl/</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <config addfieldpath="libraries/galaxiis/fields">
+        <fields name="params">
+            <fieldset name="basic">
+                <field shortId="cedstockmarketwatch"
+                       name="toolbar"
+                       type="galaxiisbar"/>
+                <field
+                        name="message"
+                        type="galaxiismessage"
+                        message="note"
+                        label="Please help us: vote, suggest and give us your opinion in the Joomla extensions directory. With this you will help us to increase our interest to modify and update the extension. Thank you very much."/>
+                <field
+                        name="version_msg"
+                        type="galaxiismessage"
+                        message="version"
+                        version="1.4.5"
+                        extension_name="CedStockMarketWatch"/>
+
+                <field name="autodetect-language" type="radio" default="true"
+                       label="MOD_CEDSTOCKMARKETNEWS_AUTOLANG"
+                       description="MOD_CEDSTOCKMARKETNEWS_AUTOLANG_DESC" class="btn-group">
+                    <option value="true">JYES</option>
+                    <option value="false">JNO</option>
+                </field>
+                <field name="language" type="language"
+                       client="site"
+                       description="MOD_CEDSTOCKMARKETNEWS_LANG_DESC"
+                       label="MOD_CEDSTOCKMARKETNEWS_LANG"
+                        >
+                    <option value="">JOPTION_USE_DEFAULT</option>
+                    <option value="en-GB">English</option>
+                    <option value="fr-FR">French</option>
+                    <option value="it-IT">Italian</option>
+                    <option value="de-DE">German</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="uk-UA">Ukrainian</option>
+                </field>
+
+                <field name="number" type="integer" length="4" default="5" label="MOD_CEDSTOCKMARKETNEWS_NUMBER" required="true"
+                       description="MOD_CEDSTOCKMARKETNEWS_NUMBER_DESC"
+                       first="0"
+                       last="1000"
+                       step="1"
+                        ></field>
+                <field name="total_news" type="integer" length="4" default="10" label="MOD_CEDSTOCKMARKETNEWS_NUMBER_TOTAL" required="true"
+                       description="MOD_CEDSTOCKMARKETNEWS_NUMBER_TOTAL_DESC"
+                       first="0"
+                       last="1000"
+                       step="1"
+                        ></field>
+
+
+                <field name="news_stock" type="text"
+                       required="true"
+                       default="AAPL,GOOG" label="MOD_CEDSTOCKMARKETNEWS_STOCK"
+                       description="MOD_CEDSTOCKMARKETNEWS_STOCK_DESC"></field>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"/>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
