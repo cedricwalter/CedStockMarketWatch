@@ -3,7 +3,7 @@
     <name>CedstockTicker | Galaxiis.com</name>
 
     <author>Galaxiis</author>
-    <creationDate>2016-12-31</creationDate>
+    <creationDate>2017-05-31</creationDate>
 
     <copyright>Copyright (C) 2013-2016 galaxiis.com All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL 3.0</license>
@@ -11,7 +11,7 @@
     <authorEmail>galaxiiscom@gmail.com</authorEmail>
     <authorUrl>www.galaxiis.com</authorUrl>
 
-    <version>1.4.5</version>
+    <version>3.0.1</version>
 
     <description>MOD_CEDSTOCKTICKER_XML_DESCRIPTION</description>
 
@@ -41,13 +41,18 @@
                         message="note"
                         label="Please help us: vote, suggest and give us your opinion in the Joomla extensions directory. With this you will help us to increase our interest to modify and update the extension. Thank you very much."/>
                 <field
+                        name="downloadid"
+                        type="galaxiisdownloadid"
+                        message="download id"
+                />
+                <field
                         name="version_msg"
                         type="galaxiismessage"
                         message="version"
-                        version="1.4.5"
+                        version="3.0.1"
                         extension_name="CedStockMarketWatch"/>
                 <field name="stocks"
-                       type="textarea" rows="3"
+                       type="textarea" rows="9"
                        label="MOD_CEDSTOCKTICKER_STOCKS"
                        default="^FTSE,AAPL,GOOG,ONVO,GT,RDX,HSBA.L,SL.L,BATS.L,BLND.L,FLG.L,RBS.L,RMG.L,VOD.L"
                        description="MOD_CEDSTOCKTICKER_STOCKS_DESC"/>
@@ -55,6 +60,27 @@
                 <field name="width" type="text" default="100%" label="MOD_CEDSTOCKTICKER_WIDTH"
                        description="MOD_CEDSTOCKTICKER_WIDTH_DESC"></field>
 
+                <field name="speed" type="integer" default="2" label="Speed"
+                       required="true"
+                       description="Speed. Default is 2."
+                       size="4"
+                       first="1"
+                       last="10"
+                       step="1"/>
+                <field name="interval" type="integer" default="200" label="Interval in seconds"
+                       required="true"
+                       description="Interval before starting the scrolling. Default is 1."
+                       size="4"
+                       first="0"
+                       last="1000"
+                       step="1"/>
+                <field name="refresh" type="integer" default="15" label="Refresh in minutes"
+                       required="true"
+                       description="Refresh in minutes. Keep this high enough if you have a lot of stock to display: the refresh should not occur at the desired speed before all stocks have time to be displayed.  Default is 15 minutes"
+                       size="4"
+                       first="1"
+                       last="60"
+                       step="1"/>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>

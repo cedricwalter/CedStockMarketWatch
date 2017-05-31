@@ -15,8 +15,8 @@ defined('_JEXEC') or die('Restricted access');
 
 $document = JFactory::getDocument();
 
-$document->addStyleSheet(JUri::base().'/media/mod_cedstockdashboard/css.css?v=1.4.5');
-$document->addScript(JUri::base().'/media/mod_cedstockdashboard/js.js?v=1.4.5');
+$document->addStyleSheet(JUri::base().'/media/mod_cedstockdashboard/css.css?v=3.0.1');
+$document->addScript(JUri::base().'/media/mod_cedstockdashboard/js.js?v=3.0.1');
 
 $document->addScriptDeclaration("
         jQuery(document).ready(function () {

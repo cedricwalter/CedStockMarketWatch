@@ -20,8 +20,8 @@ $helper = new cedStockMarketWatch($params);
 $model = $helper->getModel();
 
 $document = JFactory::getDocument();
-$document->addStyleSheet(JUri::root() . "/media/mod_cedstockmarketwatch/responsive-tables.css?v=1.4.5");
-$document->addScript(JUri::root() . "/media/mod_cedstockmarketwatch/responsive-tables.js?v=1.4.5");
+$document->addStyleSheet(JUri::root() . "/media/mod_cedstockmarketwatch/responsive-tables.css?v=3.0.1");
+$document->addScript(JUri::root() . "/media/mod_cedstockmarketwatch/responsive-tables.js?v=3.0.1");
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 

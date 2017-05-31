@@ -1,6 +1,8 @@
-function cedStockPriceTicker(divId, CNames) {
+function cedStockPriceTicker(divId, CNames, speed, interval) {
     var Symbol = "", CompName = "", Price = "", ChangeInPrice = "", PercentChangeInPrice = "";
     var flickerAPI = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22" + CNames + "%22)&env=store://datatables.org/alltableswithkeys";
+
+    // alert(flickerAPI);
     var StockTickerHTML = "";
 
     var StockTickerXML = jQuery.get(flickerAPI, function (xml) {
@@ -33,6 +35,6 @@ function cedStockPriceTicker(divId, CNames) {
         });
 
         jQuery(divId).html(StockTickerHTML);
-        jQuery(divId).jStockTicker({interval: 30, speed: 2});
+        jQuery(divId).jStockTicker({interval: 30, speed: speed});
     });
 }
